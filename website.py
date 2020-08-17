@@ -10,8 +10,8 @@ class websiteServer(BaseHTTPRequestHandler):
     "stage2" : ["1985", "pathIfCorrect", "stage2?answer", "stage2",  "That was easy, here is a harder one", "What year was ADHC founded?"],
     "stage2?answer" : ["1985", "stage3", "stage2?answer","stage2", "Not quite.... try again", "What year was ADHC founded?"],
 
-    "stage3" : ["my.njit.edu", "stage4", "stage3?answer", "stage3",  "Ready for a deep dive?", "What is the URL you would to go to see financial aid and register for classes"],
-    "stage3?answer" : ["my.njit.edu", "stage4", "stage3?answer","stage3", "WRONG try again", "What is the URL you would to go to see financial aid and register for classes"],
+    "stage3" : ["my.njit.edu", "stage4", "stage3?answer", "stage3",  "Ready for a deep dive?", "What is the URL you would to go to see financial aid and register for classes. _._._, no http://"],
+    "stage3?answer" : ["my.njit.edu", "stage4", "stage3?answer","stage3", "WRONG try again", "What is the URL you would to go to see financial aid and register for classes. _._._, no http://"],
     
     "stage4" : ["tutoring", "stage5", "stage4?answer", "stage4",  "Very nice very nice, im impressed", "There is a math professor whose last name rhymes with \"Borus\", what is he the director of?"],
     "stage4?answer" : ["tutoring", "stage5", "stage4?answer","stage4", "WRONG try again", "There is a math professor whose last name rhymes with \"Borus\", what is he the director of?"],
@@ -28,17 +28,41 @@ class websiteServer(BaseHTTPRequestHandler):
     "stage8" : ["2", "stage9", "stage8?answer", "stage8",  "GITC is where the makerspace is!", "What stage of the pandemic recovery is NJIT in?"],
     "stage8?answer" : ["2", "stage9", "stage8?answer","stage8", "WRONG try again", "What stage of the pandemic recovery is NJIT in?"],
 
-    "stage9" : ["highlanderhub.com", "stage10", "stage9?answer", "stage9",  "Always stay up to date on NJIT's pandemic recovery efforts!", "If I want to search for clubs, what website do I go to?"],
-    "stage9?answer" : ["highlanderhub.com", "stage10", "stage9?answer","stage9", "WRONG try again", "If I want to search for clubs, what website do I go to?"],
+    "stage9" : ["highlanderhub.com", "stage10", "stage9?answer", "stage9",  "Always stay up to date on NJIT's pandemic recovery efforts!", "If I want to search for clubs, what website do I go to? __._, no http://"],
+    "stage9?answer" : ["highlanderhub.com", "stage10", "stage9?answer","stage9", "WRONG try again", "If I want to search for clubs, what website do I go to?  __._, no http://"],
 
     "stage10" : ["njitgreencontact%40gmail.com", "stage11", "stage10?answer", "stage10",  "Highlander hub is a great resource!", "What is the contact email for NJIT Green?"],
     "stage10?answer" : ["njitgreencontact%40gmail.com", "stage11", "stage10?answer","stage10", "WRONG try again", "What is the contact email for NJIT Green?"],
 
-    "stage11" : ["is456", "stage12", "stage11?answer", "stage11",  "So you know how to use a search bar... lets see if you can solve riddles.", "What is the last course in this, alphabetically last, major's cirrciulim."],
-    "stage11?answer" : ["is456", "stage12", "stage11?answer","stage11", "WRONG try again", "What is the last course in this, alphabetically last, major's cirrciulim."],
+    "stage11" : ["is465", "stage12", "stage11?answer", "stage11",  "So you know how to use a search bar... lets see if you can solve riddles.", "What is the last course in this, alphabetically last, major's curriculum."],
+    "stage11?answer" : ["is465", "stage12", "stage11?answer","stage11", "WRONG try again", "What is the last course in this, alphabetically last, major's curriculum."],
 
-    "stage12" : ["911", "winner", "stage12?answer", "stage12",  "That was tough... I will lighten up", "What phone number do you call if you have an emergency on campus?"],
-    "stage12?answer" : ["911", "winner", "stage12?answer","stage12", "WRONG try again... in true emergencys always call this number and state \"Im at NJIT\"", "What phone number do you call if you have an emergency on campus?"]
+    "stage12" : ["911", "stage13", "stage12?answer", "stage12",  "That was tough... I will lighten up", "What phone number do you call if you have an emergency on campus?"],
+    "stage12?answer" : ["911", "stage13", "stage12?answer","stage12", "WRONG try again... in true emergency’s  always call this number and state \"Im at NJIT\"", "What phone number do you call if you have an emergency on campus?"],
+
+    "stage13" : ["2018", "stage14", "stage13?answer", "stage13",  "Not bad... 911 is something you should have known however...", "This honors scholar was \"incredibly appreciative\" for the honors college. What year did he graduate?"],
+    "stage13?answer" : ["2018", "stage14", "stage13?answer","stage13", "WRONG try again...", "This honors scholar was \"incredibly appreciative\" for the honors college. What year did he graduate?"],
+
+    "stage14" : ["34", "stage15", "stage14?answer", "stage14",  "Nice find. Some day that will be you!", "Im interested in the university's policy on research and intellectual property... how big (in KB) is the document im looking for?"],
+    "stage14?answer" : ["34", "stage15", "stage14?answer","stage14", "WRONG try again...", "Im interested in the university's policy on research and intellectual property... how big (in KB) is the document im looking for?"],
+
+    "stage15" : ["", "stage16", "stage15?answer", "stage15",  "", ""],
+    "stage15?answer" : ["", "stage16", "stage15?answer","stage15", "WRONG try again...", ""],
+
+    "stage16" : ["", "stage17", "stage16?answer", "stage16",  "", ""],
+    "stage16?answer" : ["", "stage17", "stage16?answer","stage16", "WRONG try again...", ""],
+
+    "stage17" : ["", "stage18", "stage17?answer", "stage17",  "", ""],
+    "stage17?answer" : ["", "stage18", "stage17?answer","stage17", "WRONG try again...", ""],
+
+    "stage18" : ["", "stage19", "stage18?answer", "stage18",  "", ""],
+    "stage18?answer" : ["", "stage19", "stage18?answer","stage18", "WRONG try again...", ""],
+
+    "stage19" : ["", "stage20", "stage19?answer", "stage19",  "", ""],
+    "stage19?answer" : ["", "stage20", "stage19?answer","stage19", "WRONG try again...", ""],
+
+    "stage20" : ["", "winner", "stage20?answer", "stage20",  "", ""],
+    "stage20?answer" : ["", "winner", "stage20?answer","stage20", "WRONG try again...", ""]
 
     }
 
