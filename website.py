@@ -28,14 +28,17 @@ class websiteServer(BaseHTTPRequestHandler):
     "stage8" : ["2", "stage9", "stage8?answer", "stage8",  "GITC is where the makerspace is!", "What stage of the pandemic recovery is NJIT in?"],
     "stage8?answer" : ["2", "stage9", "stage8?answer","stage8", "WRONG try again", "What stage of the pandemic recovery is NJIT in?"],
 
-    "stage9" : ["highlanderhub.com", "stage10", "stage9?answer", "stage9",  "Alwasy stay up to date on NJIT's pandemic recovery efforts!", "If I want to search for clubs, what website do I go to?"],
+    "stage9" : ["highlanderhub.com", "stage10", "stage9?answer", "stage9",  "Always stay up to date on NJIT's pandemic recovery efforts!", "If I want to search for clubs, what website do I go to?"],
     "stage9?answer" : ["highlanderhub.com", "stage10", "stage9?answer","stage9", "WRONG try again", "If I want to search for clubs, what website do I go to?"],
 
     "stage10" : ["njitgreencontact%40gmail.com", "stage11", "stage10?answer", "stage10",  "Highlander hub is a great resource!", "What is the contact email for NJIT Green?"],
     "stage10?answer" : ["njitgreencontact%40gmail.com", "stage11", "stage10?answer","stage10", "WRONG try again", "What is the contact email for NJIT Green?"],
 
-    "stage11" : ["IS456", "stage12", "stage11?answer", "stage11",  "So you know how to use a search bar... lets see if you can solve riddles.", "What is the last course in this, alphabetically last, major's cirrciulim."],
-    "stage11?answer" : ["IS465", "stage12", "stage11?answer","stage11", "WRONG try again", "What is the last course in this, alphabetically last, major's cirrciulim."]
+    "stage11" : ["is456", "stage12", "stage11?answer", "stage11",  "So you know how to use a search bar... lets see if you can solve riddles.", "What is the last course in this, alphabetically last, major's cirrciulim."],
+    "stage11?answer" : ["is456", "stage12", "stage11?answer","stage11", "WRONG try again", "What is the last course in this, alphabetically last, major's cirrciulim."],
+
+    "stage12" : ["911", "winner", "stage12?answer", "stage12",  "That was tough... I will lighten up", "What phone number do you call if you have an emergency on campus?"],
+    "stage12?answer" : ["911", "winner", "stage12?answer","stage12", "WRONG try again... in true emergencys always call this number and state \"Im at NJIT\"", "What phone number do you call if you have an emergency on campus?"]
 
     }
 
@@ -59,7 +62,7 @@ class websiteServer(BaseHTTPRequestHandler):
                 for page in self.pathsToURL:
                     if page == pathNoAns:
                         pageFound = True
-                        print(page, ans == self.pathsToURL[page][0])
+                        print(page, self.pathsToURL[page][0])
 
                         if ans == self.pathsToURL[page][0]:
                             correctPath = self.pathsToURL[page][1]
