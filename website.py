@@ -7,8 +7,8 @@ class websiteServer(BaseHTTPRequestHandler):
     pathsToURL = { "home": "home.html",
     "home?answer" : ["1990", "stage2", "home?answer", "home", "Whoops! Incorrect, please try again", "In which year did our president join the university" ], 
     
-    "stage2" : ["1985", "pathIfCorrect", "stage2?answer", "stage2",  "That was easy, here is a harder one", "What year was ADHC founded?"],
-    "stage2?answer" : ["1985", "stage3", "stage2?answer","stage2", "Not quite.... try again", "What year was ADHC founded?"],
+    "stage2" : ["1985", "pathIfCorrect", "stage2?answer", "stage2",  "That was easy, here is a harder one", "What year was NJIT's honors program founded?"],
+    "stage2?answer" : ["1985", "stage3", "stage2?answer","stage2", "Not quite.... try again", "What year was NJIT's honors program   founded?"],
 
     "stage3" : ["my.njit.edu", "stage4", "stage3?answer", "stage3",  "Ready for a deep dive?", "What is the URL you would to go to see financial aid and register for classes. _._._, no http://"],
     "stage3?answer" : ["my.njit.edu", "stage4", "stage3?answer","stage3", "WRONG try again", "What is the URL you would to go to see financial aid and register for classes. _._._, no http://"],
@@ -19,7 +19,7 @@ class websiteServer(BaseHTTPRequestHandler):
     "stage5" : ["america+east", "stage6", "stage5?answer", "stage5",  "The math tutoring center is a great resource!", "NJIT recently joined a new athleic confrence, what is its name?"],
     "stage5?answer" : ["america+east", "stage6", "stage5?answer","stage5", "WRONG try again", "NJIT recently joined a new athleic confrence, what is its name?"],
 
-    "stage6" : ["19", "stage7", "stage6?answer", "stage6",  "When they open again, athleic games on campus are always fun!", "How many athletic teams (D1 and club) does NJIT have?"],
+    "stage6" : ["19", "stage7", "stage6?answer", "stage6",  "When they open again, athletic games on campus are always fun!", "How many athletic teams (D1 and club) does NJIT have?"],
     "stage6?answer" : ["19", "stage7", "stage6?answer","stage6", "WRONG try again", "How many athletic teams (D1 and club) does NJIT have?"],
 
     "stage7" : ["gitc", "stage8", "stage7?answer", "stage7",  "GO HIGHLANDERS!!", "What is the north most building on our campus (Acronym)"],
@@ -40,8 +40,8 @@ class websiteServer(BaseHTTPRequestHandler):
     "stage12" : ["911", "stage13", "stage12?answer", "stage12",  "That was tough... I will lighten up", "What phone number do you call if you have an emergency on campus?"],
     "stage12?answer" : ["911", "stage13", "stage12?answer","stage12", "WRONG try again... in true emergency’s  always call this number and state \"Im at NJIT\"", "What phone number do you call if you have an emergency on campus?"],
 
-    "stage13" : ["2018", "stage14", "stage13?answer", "stage13",  "Not bad... 911 is something you should have known however...", "This honors scholar was \"incredibly appreciative\" for the honors college. What year did he graduate?"],
-    "stage13?answer" : ["2018", "stage14", "stage13?answer","stage13", "WRONG try again...", "This honors scholar was \"incredibly appreciative\" for the honors college. What year did he graduate?"],
+    "stage13" : ["2018", "stage14", "stage13?answer", "stage13",  "Not bad... 911 is something you should have known however...", "This HONORS scholar was \"incredibly appreciative\" for the HONORS college. What year did he graduate?"],
+    "stage13?answer" : ["2018", "stage14", "stage13?answer","stage13", "WRONG try again...", "This HONORS scholar was \"incredibly appreciative\" for the HONORS college. What year did he graduate?"],
 
     "stage14" : ["34", "stage15", "stage14?answer", "stage14",  "Nice find. Some day that will be you!", "Im interested in the university's policy on research and intellectual property... how big (in KB) is the document im looking for?"],
     "stage14?answer" : ["34", "stage15", "stage14?answer","stage14", "WRONG try again...", "Im interested in the university's policy on research and intellectual property... how big (in KB) is the document im looking for?"],
@@ -52,13 +52,17 @@ class websiteServer(BaseHTTPRequestHandler):
     "stage16" : ["325", "stage17", "stage16?answer", "stage16",  "The Yoda mood, I am in.", "A full time commuter, I am. A parking pass, I wish to buy. The cost, I am wondering"],
     "stage16?answer" : ["325", "stage17", "stage16?answer","stage16", "WRONG try again...", "A full time commuter, I am. A parking pass, I wish to buy. The cost, I am wondering"],
 
-    "stage17" : ["students", "stage18", "stage17?answer", "stage17",  "Okay that is enough of that. Im hungry", "What was the number 1 strategic prioarity in NJIT's 2020 vision?"],
-    "stage17?answer" : ["students", "stage18", "stage17?answer","stage17", "WRONG try again...", "What was the number 1 strategic prioarity in NJIT's 2020 vision?"],
+    "stage17" : ["students", "stage18", "stage17?answer", "stage17",  "Okay that is enough of that. Im hungry", "What was the number 1 strategic priority in \"NJIT's 2020 vision\"?"],
+    "stage17?answer" : ["students", "stage18", "stage17?answer","stage17", "WRONG try again...", "What was the number 1 strategic priority in \"NJIT's 2020 vision\"?"],
 
     "stage18" : ["canvas", "winner", "stage18?answer", "stage18",  "Students always come first at NJIT!", "What is the name of the website you go to in order to see your homework and classes?"],
     "stage18?answer" : ["canvas", "winner", "stage18?answer","stage18", "WRONG try again...", "What is the name of the website you go to in order to see your homework and classes?"]
 
-
+#fix the research qwuestion
+#nuke the degreworks
+#30 questions
+#dorman questions on NJIT history
+#dorman history and names of buildings
 
     }
 
