@@ -46,23 +46,19 @@ class websiteServer(BaseHTTPRequestHandler):
     "stage14" : ["34", "stage15", "stage14?answer", "stage14",  "Nice find. Some day that will be you!", "Im interested in the university's policy on research and intellectual property... how big (in KB) is the document im looking for?"],
     "stage14?answer" : ["34", "stage15", "stage14?answer","stage14", "WRONG try again...", "Im interested in the university's policy on research and intellectual property... how big (in KB) is the document im looking for?"],
 
-    "stage15" : ["", "stage16", "stage15?answer", "stage15",  "", ""],
-    "stage15?answer" : ["", "stage16", "stage15?answer","stage15", "WRONG try again...", ""],
+    "stage15" : ["degreeworks", "stage16", "stage15?answer", "stage15",  "Lets get back to the riddles...", "A senior I am. Enough credits to graduate, Do I have? A tool to tell me, I am looking for."],
+    "stage15?answer" : ["degreeworks", "stage16", "stage15?answer","stage15", "WRONG try again...", "A senior I am. Enough credits to graduate, Do I have? A tool to tell me, I am looking for."],
 
-    "stage16" : ["", "stage17", "stage16?answer", "stage16",  "", ""],
-    "stage16?answer" : ["", "stage17", "stage16?answer","stage16", "WRONG try again...", ""],
+    "stage16" : ["325", "stage17", "stage16?answer", "stage16",  "The Yoda mood, I am in.", "A full time commuter, I am. A parking pass, I wish to buy. The cost, I am wondering"],
+    "stage16?answer" : ["325", "stage17", "stage16?answer","stage16", "WRONG try again...", "A full time commuter, I am. A parking pass, I wish to buy. The cost, I am wondering"],
 
-    "stage17" : ["", "stage18", "stage17?answer", "stage17",  "", ""],
-    "stage17?answer" : ["", "stage18", "stage17?answer","stage17", "WRONG try again...", ""],
+    "stage17" : ["students", "stage18", "stage17?answer", "stage17",  "Okay that is enough of that. Im hungry", "What was the number 1 strategic prioarity in NJIT's 2020 vision?"],
+    "stage17?answer" : ["students", "stage18", "stage17?answer","stage17", "WRONG try again...", "What was the number 1 strategic prioarity in NJIT's 2020 vision?"],
 
-    "stage18" : ["", "stage19", "stage18?answer", "stage18",  "", ""],
-    "stage18?answer" : ["", "stage19", "stage18?answer","stage18", "WRONG try again...", ""],
+    "stage18" : ["canvas", "winner", "stage18?answer", "stage18",  "Students always come first at NJIT!", "What is the name of the website you go to in order to see your homework and classes?"],
+    "stage18?answer" : ["canvas", "winner", "stage18?answer","stage18", "WRONG try again...", "What is the name of the website you go to in order to see your homework and classes?"]
 
-    "stage19" : ["", "stage20", "stage19?answer", "stage19",  "", ""],
-    "stage19?answer" : ["", "stage20", "stage19?answer","stage19", "WRONG try again...", ""],
 
-    "stage20" : ["", "winner", "stage20?answer", "stage20",  "", ""],
-    "stage20?answer" : ["", "winner", "stage20?answer","stage20", "WRONG try again...", ""]
 
     }
 
