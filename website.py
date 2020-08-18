@@ -92,9 +92,9 @@ class websiteServer(BaseHTTPRequestHandler):
     count = 0
     host = "localhost:12345"
     def do_GET(self):
-        self.count = self.count + 1
-        print(self.count)
-
+        ic = self.count + 1
+        print(ic)
+        self.count = ic
         reply = "def"
         path = str(self.path)[1:]
         print(path)
