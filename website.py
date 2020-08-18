@@ -89,9 +89,12 @@ class websiteServer(BaseHTTPRequestHandler):
     "stage29?answer" : ["43", "winner", "stage29?answer","stage29", "Wrong! Try again.", "What is the sum of the first digit of every answer which began with a number"]
 
     }
-
+    count = 0
     host = "localhost:12345"
     def do_GET(self):
+        self.count = self.count + 1
+        print(self.count)
+
         reply = "def"
         path = str(self.path)[1:]
         print(path)
