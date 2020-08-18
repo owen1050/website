@@ -16,8 +16,8 @@ class websiteServer(BaseHTTPRequestHandler):
     "stage4" : ["tutoring", "stage5", "stage4?answer", "stage4",  "Very nice very nice, im impressed", "There is a math professor whose last name rhymes with \"Borus\", what is he the director of?"],
     "stage4?answer" : ["tutoring", "stage5", "stage4?answer","stage4", "WRONG try again", "There is a math professor whose last name rhymes with \"Borus\", what is he the director of?"],
 
-    "stage5" : ["america+east", "stage6", "stage5?answer", "stage5",  "The math tutoring center is a great resource!", "NJIT recently joined a new athleic confrence, what is its name?"],
-    "stage5?answer" : ["america+east", "stage6", "stage5?answer","stage5", "WRONG try again", "NJIT recently joined a new athleic confrence, what is its name?"],
+    "stage5" : ["america+east", "stage6", "stage5?answer", "stage5",  "The math tutoring center is a great resource!", "NJIT recently joined a new athletic conference, what is its name?"],
+    "stage5?answer" : ["america+east", "stage6", "stage5?answer","stage5", "WRONG try again", "NJIT recently joined a new athletic conference, what is its name?"],
 
     "stage6" : ["19", "stage7", "stage6?answer", "stage6",  "When they open again, athletic games on campus are always fun!", "How many athletic teams (D1 and club) does NJIT have?"],
     "stage6?answer" : ["19", "stage7", "stage6?answer","stage6", "WRONG try again", "How many athletic teams (D1 and club) does NJIT have?"],
@@ -58,39 +58,35 @@ class websiteServer(BaseHTTPRequestHandler):
     "stage19" : ["aecom", "stage20", "stage19?answer", "stage19",  "Canvas will be your best friend... and your worst", "What is the name of the firm which he who our college is named after founded?"],
     "stage19?answer" : ["aecom", "stage20", "stage19?answer","stage19", "Wrong! Try again.", "What is the name of the firm which he who our college is named after founded?"],
 
-    "stage20" : ["schooldude", "stage21", "stage20?answer", "stage20",  "Mr. Dorman is an awesome man!", "If I see somthing broken on campus or in my dorm, where do I go to submit a request to get it fixed?"],
-    "stage20?answer" : ["schooldude", "stage21", "stage20?answer","stage20", "Wrong! Try again.", "Mr. Dorman is an awesome man!", "If I see somthing broken on campus or in my dorm, where do I go to submit a request to get it fixed?"],
+    "stage20" : ["schooldude", "stage21", "stage20?answer", "stage20",  "Mr. Dorman is an awesome man!", "If I see something broken on campus or in my dorm, where do I go to submit a request to get it fixed?"],
+    "stage20?answer" : ["schooldude", "stage21", "stage20?answer","stage20", "Wrong! Try again.", "Mr. Dorman is an awesome man!", "If I see something broken on campus or in my dorm, where do I go to submit a request to get it fixed?"],
 
-   "stage21" : ["110", "stage22", "stage21?answer", "stage21",  "The NJIT maitnence staff do an awesome job of keeping our campus in tip top shape!", "How many millions of dollar did our new athletic center (WEC) cost?"],
+   "stage21" : ["110", "stage22", "stage21?answer", "stage21",  "The NJIT maintenance staff do an awesome job of keeping our campus in tip top shape!", "How many millions of dollar did our new athletic center (WEC) cost?"],
     "stage21?answer" : ["110", "stage22", "stage21?answer","stage21", "Wrong! Try again.", "How many millions of dollars did our new athletic center (WEC) cost?"],
 
-    "stage22" : ["10", "stage23", "stage22?answer", "stage22",  "Its a beautiful buiding which I cant wait for you all to get to use!", "If I want to download the document to read about NJIT's rules on hoverboards, how many KB is this document?"],
+    "stage22" : ["10", "stage23", "stage22?answer", "stage22",  "Its a beautiful building which I cant wait for you all to get to use!", "If I want to download the document to read about NJIT's rules on hoverboards, how many KB is this document?"],
     "stage22?answer" : ["10", "stage23", "stage22?answer","stage22", "Wrong! Try again.", "If I want to download the document to read about NJIT's rules on hoverboards, how many KB is this document?"],
 
     "stage23" : ["1985", "stage24", "stage23?answer", "stage23",  "No hoverboards on campus #bigSad", "What year did our Provost graduate from NJIT (BS)"],
     "stage23?answer" : ["1985", "stage24", "stage23?answer","stage23", "Wrong! Try again.", "What year did our Provost graduate from NJIT (BS)"],
 
-    "stage24" : ["6", "stage25", "stage24?answer", "stage24",  "Fadi also has ann MS and PhD from NJIT!", "How many colleges does NJIT have?"],
+    "stage24" : ["6", "stage25", "stage24?answer", "stage24",  "Dr. Deek also has an MS and PhD from NJIT!", "How many colleges does NJIT have?"],
     "stage24?answer" : ["6", "stage25", "stage24?answer","stage24", "Wrong! Try again.", "How many colleges does NJIT have?"],
 
     "stage25" : ["4pm", "stage26", "stage25?answer", "stage25",  "There are a lot of awesome classes and minors outside of your major to explore", "What time does the library close today? \"_PM\""],
     "stage25?answer" : ["4pm", "stage26", "stage25?answer","stage25", "Wrong! Try again.", "What time does the library close today? \"_PM\""],
 
-    "stage26" : ["students", "stage27", "stage26?answer", "stage26",  "Dont worry, its open much later during the semester", "What is NJIT's studnet to faculty ratio? \"_:_\""],
-    "stage26?answer" : ["students", "stage27", "stage26?answer","stage26", "Wrong! Try again.", ""],
+    "stage26" : ["17%3a1", "stage27", "stage26?answer", "stage26",  "Dont worry, its open much later during the semester", "What is NJIT's student to faculty ratio? \"_:_\""],
+    "stage26?answer" : ["17%3a1", "stage27", "stage26?answer","stage26", "Wrong! Try again.", "What is NJIT's student to faculty ratio? \"_:_\""],
 
-    "stage27" : ["students", "stage28", "stage27?answer", "stage27",  "", ""],
-    "stage27?answer" : ["students", "stage28", "stage27?answer","stage27", "Wrong! Try again.", ""],
+    "stage27" : ["60", "stage28", "stage27?answer", "stage27",  "Nice job!", "What is the hourly cost of Surface Grinding at the NJIT makerspace?"],
+    "stage27?answer" : ["60", "stage28", "stage27?answer","stage27", "Wrong! Try again.", "What is the hourly cost of Surface Grinding at the NJIT makerspace?"],
 
-    "stage28" : ["students", "stage29", "stage28?answer", "stage28",  "", ""],
-    "stage28?answer" : ["students", "stage29", "stage28?answer","stage28", "Wrong! Try again.", ""],
+    "stage28" : ["38", "stage29", "stage28?answer", "stage28",  "I miss the makerspace :(", "How many NJIT degrees and certificates are offered entirely online?"],
+    "stage28?answer" : ["38", "stage29", "stage28?answer","stage28", "Wrong! Try again.", "How many NJIT degrees are offered entirely online?"],
 
-    "stage29" : ["students", "winner", "stage29?answer", "stage29",  "", ""],
-    "stage29?answer" : ["students", "winner", "stage29?answer","stage29", "Wrong! Try again.", ""]
-
-
-#dorman questions on NJIT history
-#dorman history and names of buildings
+    "stage29" : ["43", "winner", "stage29?answer", "stage29",  "Remember in the beginning when I said to write down all your answers?", "What is the sum of the first digit of every answer which began with a number"],
+    "stage29?answer" : ["43", "winner", "stage29?answer","stage29", "Wrong! Try again.", "What is the sum of the first digit of every answer which began with a number"]
 
     }
 
