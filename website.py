@@ -1,6 +1,7 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import urllib, os
 
+count = 0
 
 class websiteServer(BaseHTTPRequestHandler):
     
@@ -89,12 +90,12 @@ class websiteServer(BaseHTTPRequestHandler):
     "stage29?answer" : ["43", "winner", "stage29?answer","stage29", "Wrong! Try again.", "What is the sum of the first digit of every answer which began with a number"]
 
     }
-    count = 0
     host = "localhost:12345"
     def do_GET(self):
-        ic = self.count + 1
+        global count
+        ic = count + 1
         print(ic)
-        self.count = ic
+        count = ic
         reply = "def"
         path = str(self.path)[1:]
         print(path)
